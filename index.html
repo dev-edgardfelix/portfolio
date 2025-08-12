@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Edgard Felix</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+
+            <li>
+                <a href="#contatos" class="menu-link">Contatos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="assets/imagens/edgard-felix.png" alt="Edgard Felix" class="foto-perfil">
+        <h1>Edgard Felix</h1>
+        <p>Desenvolvedor Full-Stack</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Sou Edgard Felix, desenvolvedor Full-Stack em transição de carreira, com foco em
+                aprimoramento contínuo na área de programação. Possuo experiência e conhecimento em tecnologias como
+                JavaScript, Node.js, React, TypeScript, HTML5 e CSS3, buscando sempre aplicar boas práticas e
+                desenvolver soluções eficientes.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="assets/imagens/spotify.png" alt="projeto 1" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Interface Spotify</h3>
+                    <p class="paragrafo-projetos">Interface dá página inicial do App de Músicas Spotify! Desenvolvido com HTML5, CSS3 e Javascript.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                    <img src="assets/imagens/convertMoney.png" alt="projeto 2" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Conversor de Moedas</h3>
+                    <p class="paragrafo-projetos">Conversor de moedas em tempo real, utilizando HTML5, CSS3, Javascript e API Rest para manter atualizada as cotações</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                    <img src="assets/imagens/jokenpo.png" alt="projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Clássico Game Jokenpô</h3>
+                    <p class="paragrafo-projetos">Jogo clássico de infância, Pedra, Papel, Tesoura! Utilizando HTML5 CSS3 e Javascript, funções com parâmetros e lógica!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input class="campo-form" type="text" placeholder="Digite seu nome" id="nome">
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="7"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar via Whatsapp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;Todos os direitos Reservados | EdgardFelix</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
